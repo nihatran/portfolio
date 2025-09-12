@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+.app {
+    background-color: var(--bgcolor);
+    color: var(--text-color)
+}
+
+[data-theme="dark"] {
+    --bgcolor: rgb(37, 37, 37);
+    --text-color: white;
+    --primarycolor: rgb(44, 99, 202);
+    
+}
+
+[data-theme="light"] {
+    --bgcolor: white;
+    --text-color: black;
+    --primarycolor: rgb(130, 190, 247);
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    opacity: 0; 
+    transition: opacity 1s ease-in;
+}
+
+#home.visible {
+    opacity: 1;
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    text-align: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.8em;
+}
+
+div > p {
+    position: relative;
+    font-size: 1.2em;
+    display: inline;
+    z-index: 2;
+}
+
+.highlight-wrapper {
+    position: relative;
+    width: 220px;
+    height: 25px;
+    margin-top: 15px;
+}
+
+.highlight-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primarycolor);
+    transform: scaleX(0%);
+    transform-origin: left;
+    transition: transform 0.9s ease 0.19s;
+}
+
+.highlight-bar.show {
+    transform: scaleX(1);
+}
