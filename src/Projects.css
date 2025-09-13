@@ -1,0 +1,11 @@
+
+.projects-main {
+    height: 100%;
+    width: 70%;
+}
+
+.underline.projects {
+    height: 6px;
+    width: 118px;
+    left: -10px;
+}

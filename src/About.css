@@ -1,0 +1,20 @@
+
+.about-main {
+    height: 100%;
+    width: 70%;
+}
+
+.heading-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.underline.about {
+    height: 6px;
+    width: 95px;
+    left: -10px;
+}
+
+

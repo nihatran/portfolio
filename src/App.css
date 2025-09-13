@@ -13,14 +13,14 @@ body {
 [data-theme="dark"] {
     --bgcolor: rgb(37, 37, 37);
     --text-color: white;
-    --primarycolor: rgb(44, 99, 202);
+    --primarycolor: #0F56EE;
     
 }
 
 [data-theme="light"] {
     --bgcolor: white;
     --text-color: black;
-    --primarycolor: rgb(130, 190, 247);
+    --primarycolor: #65baff;
 }
 
 #home {
@@ -35,7 +35,7 @@ body {
     opacity: 1;
 }
 
-.main {
+.home-main {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -44,7 +44,7 @@ body {
     text-align: center;
 }
 
-.main-content {
+.home-main-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,6 +82,54 @@ div > p {
     transition: transform 0.9s ease 0.19s;
 }
 
-.highlight-bar.show {
+.highlight-bar.visible {
+    transform: scaleX(1);
+}
+
+#about, #projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about {
+    height: 90vh;
+}
+
+#projects {
+    height: 95vh;
+}
+
+h2 {
+    font-size: 1.7em;
+    font-weight: 400;
+    margin: 0;
+}
+
+.heading-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.fadein {
+    opacity: 0;
+    transition: opacity 1s ease-in; 
+}
+
+.fadein.visible {
+    opacity: 1;
+}
+
+.underline {
+    position: relative;
+    background-color: var(--primarycolor);
+    transform: scaleX(0%);
+    transform-origin: left;
+    transition: transform 0.9s ease 0.19s;
+}
+
+.underline.visible {
     transform: scaleX(1);
 }
