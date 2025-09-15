@@ -8,7 +8,9 @@ export function Projects() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setIsVisible(entry.isIntersecting);
+        if (entry.isIntersecting && !isVisible) {
+          setIsVisible(true); // trigger anim
+        }
       },
       {
         threshold: 0.5,
