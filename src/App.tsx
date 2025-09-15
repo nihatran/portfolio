@@ -1,11 +1,15 @@
 import { useState, useEffect } from "react";
 import "./App.css";
+import useLocalStorage from "use-local-storage";
 import { Header } from "./Header";
 import { About } from "./About";
 import { Projects } from "./Projects";
 
 function App() {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useLocalStorage<boolean | undefined>(
+    "isDark",
+    false
+  );
   const [isVisible, setIsVisible] = useState(false);
 
   // fade in home elements

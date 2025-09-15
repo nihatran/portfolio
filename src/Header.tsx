@@ -2,8 +2,8 @@ import { useState } from "react";
 import "./Header.css";
 
 interface HeaderProps {
-  isDark: boolean;
-  setIsDark: React.Dispatch<React.SetStateAction<boolean>>;
+  isDark: boolean | undefined;
+  setIsDark: React.Dispatch<React.SetStateAction<boolean | undefined>>;
 }
 
 export function Header({ isDark, setIsDark }: HeaderProps) {
