@@ -16,7 +16,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 70px;
-    margin: 150px 0px;
+    margin: 100px 0px;
 }
 
 .pfp {
@@ -75,13 +75,13 @@
 
 .box {
     opacity: 0;
-    transform: translateY(30%);
+    transform: translateX(-30%);
     transition: all 1s ease;
 }
 
 .box.visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
 }
 
 .about-text1 {
