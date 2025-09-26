@@ -10,7 +10,7 @@ export function About() {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting && !isVisible) {
-          setIsVisible(true);
+          setIsVisible(true); // trigger anim
         }
       },
       {
@@ -50,7 +50,28 @@ export function About() {
           ></div>
         </div>
         <div className="about-container">
-          <div className={`about-text1 box ${isVisible ? "visible" : ""}`}>
+          <div className={`card-container box ${isVisible ? "visible" : ""}`}>
+            <div
+              className={`card ${isFlipped ? "isFlipped" : null}`}
+              onClick={handleClick}
+            >
+              <div className="card-front">
+                <img
+                  src="nipfp.png"
+                  alt="profile picture"
+                  className="pfp"
+                ></img>
+              </div>
+              <div className="card-back">
+                <img
+                  src="nipfp2.png"
+                  alt="profile picture"
+                  className="pfp"
+                ></img>
+              </div>
+            </div>
+          </div>
+          <div className={`about-text box ${isVisible ? "visible" : ""}`}>
             <p>
               {" "}
               <p>Hello, my name is Ni.</p>
@@ -61,38 +82,6 @@ export function About() {
               without fear of failure. Anything is possible with the right blend
               of creativity, technology, and passion.{" "}
             </p>
-          </div>
-          <div className={`card-container box ${isVisible ? "visible" : ""}`}>
-            <div
-              className={`card ${isFlipped ? "isFlipped" : null}`}
-              onClick={handleClick}
-            >
-              <div className="card-front">
-                <img
-                  src="ni_pfp2.jpg"
-                  alt="profile picture"
-                  className="pfp"
-                ></img>
-              </div>
-              <div className="card-back">
-                <img
-                  src="ni_pfp.jpg"
-                  alt="profile picture"
-                  className="pfp"
-                ></img>
-              </div>
-            </div>
-          </div>
-          <div className={`about-text2 box ${isVisible ? "visible" : ""}`}>
-            <ul className="skills">
-              <li>HTML/CSS</li>
-              <li>JavaScript</li>
-              <li>TypeScript</li>
-              <li>C#</li>
-              <li>Python</li>
-              <li>React</li>
-              <li>Next.js</li>
-            </ul>
           </div>
         </div>
       </div>

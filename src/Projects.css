@@ -6,7 +6,15 @@
 
 .underline.projects {
     height: 6px;
-    width: 125px;
+    width: 120px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 100px 0px;
+    width: 100%;
 }
 
 

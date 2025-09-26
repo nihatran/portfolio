@@ -20,15 +20,14 @@ body {
     --bgcolor: rgb(37, 37, 37);
     --text-color: white;
     --primarycolor: #0F56EE;
-    --secondarycolor: #356acc;
-    
+    --secondarycolor: #05306C;
 }
 
 [data-theme="light"] {
     --bgcolor: white;
     --text-color: black;
     --primarycolor: #65baff;
-    --secondarycolor: #d4e7fd;
+    --secondarycolor: #E5EBEB;
 }
 
 
@@ -90,7 +89,7 @@ h1 {
     background-color: var(--primarycolor);
     transform: scaleX(0%);
     transform-origin: left;
-    transition: transform 0.9s ease 0.19s;
+    transition: transform 0.7s ease 0.19s;
 }
 
 .highlight-bar.visible {
@@ -112,7 +111,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .fadein {
@@ -129,7 +128,7 @@ h2 {
     background-color: var(--primarycolor);
     transform: scaleX(0%);
     transform-origin: left;
-    transition: transform 0.9s ease 0.19s;
+    transition: transform 0.7s ease 0.19s;
 }
 
 .underline.visible {
