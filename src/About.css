@@ -1,69 +1,35 @@
 
 .about-main {
-    height: 100%;
-    width: 60%;
+    width: 100%;
 }
 
 .underline.about {
     height: 6px;
-    width: 75px;
-    left: -1px;
+    width: 100px;
 }
 
-.profile-grid-wrapper {
+.about-container {
+    width: 100%;
+    margin-top: 30px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-.profile-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 250px 152px 220px;
-    max-width: 100%;
-    width: 100%;
-    gap: 20px;
-    font-size: 1.2em;
-    font-weight: 500;
-}
-
-.profile-1 {
-    grid-area: 1 / 1 / 2 / 2;
-    background: url("shimo1.png") right;
-    transform: translateX(-40%);
-    opacity: 0;
-    transition: all 0.9s ease-in-out 0.19s;
-}
-
-.profile-1.visible {
-    transform: translateX(0%);
-    opacity: 1;
-}
-
-.profile-flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    height: 100%;
-    padding: 0px 15px;
+    flex-wrap: wrap;
+    gap: 70px;
+    margin: 150px 0px;
 }
 
 .pfp {
-    height: 100%;
+    max-width: 520px;
     width: 100%;
-    border-radius: 5px;
+    border: 1px solid black;
 }
-
 
 .card-container {
     display: flex;
     position: relative;
-    min-width: 210px;
-    height: 200px;
+    min-width: 520px;
+    height: 520px;
     cursor: pointer;
 }
 
@@ -89,109 +55,57 @@
 }
 
 .card-back {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100%;
     width: 100%;
     border-radius: 5px;
     backface-visibility: hidden;
     transform: rotateY(180deg);
-    background-color: white;
 }
 
-.info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 30px;
-    gap: 10px;
-    width: 370px;
-    height: 140px;
-    background-color: var(--bgcolor);
-    border-radius: 5px;
-}
-
-.info-details {
-    margin-left: 1em;
-}
-
-.desc-2 {
-    grid-area: 1 / 2 / 3 / 3;
-    background: url("shimo2.png") right;
-    padding: 20px;
+.about-text1, .about-text2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(-40%);
-    opacity: 0;
-    transition: all 0.9s ease-in-out 0.19s;
+    font-size: 1.8em;
+    width: 520px;
+    border: 1px solid var(--text-color);
+    height: 520px;
+    padding: 15px;
 }
 
-.desc-2.visible {
-    transform: translateY(0%);
+.box {
+    opacity: 0;
+    transform: translateY(30%);
+    transition: all 1s ease;
+}
+
+.box.visible {
     opacity: 1;
-}
-
-.desc-container {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    padding: 30px;
-    height: 280px;
-    width: 550px;
-    border-radius: 5px;
-    background-color: var(--bgcolor);
-}
-
-.music-3 {
-    grid-area: 2 / 1 / 2 / 2;
-    transform: translateX(40%);
-    opacity: 0;
-    transition: all 0.9s ease-in-out 0.19s;
-}
-
-.music-3.visible {
-    transform: translateX(0%);
-    opacity: 1;
-}
-
-iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-.skills-4 {
-    grid-area: 3 / 1 / 4 / 3;
-    background: url("shimo3.png");
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translateY(40%);
-    opacity: 0;
-    transition: all 0.9s ease-in-out 0.19s;
-}
-
-.skills-4.visible {
     transform: translateY(0);
-    opacity: 1;
+}
+
+.about-text1 {
+    transition-delay: 200ms;
+}
+
+.card-container {
+    transition-delay: 400ms;
+}
+
+.about-text2 {
+    transition-delay: 600ms;
 }
 
 .skills {
     display: flex;
-    gap: 15px;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
     list-style-type: none;
 }
 
-.skills li {
-    background-color: var(--bgcolor);
-    padding: 12px;
-    border-radius: 5px;
-}
 
-@media (max-width: 1100px) {
+@media (max-width: 900px) {
     .about-main {
         width: 90%;
     }

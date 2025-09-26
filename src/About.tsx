@@ -49,78 +49,50 @@ export function About() {
             className={`underline about ${isVisible ? "visible" : ""}`}
           ></div>
         </div>
-        <div className="profile-grid-wrapper">
-          <div className="profile-grid">
-            <div className={`item profile-1 ${isVisible ? "visible" : ""}`}>
-              <div className="profile-flex">
-                <div className="card-container">
-                  <div
-                    className={`card ${isFlipped ? "isFlipped" : null}`}
-                    onClick={handleClick}
-                  >
-                    <div className="card-front">
-                      <img
-                        src="nipfp.jpg"
-                        alt="profile picture"
-                        className="pfp"
-                      ></img>
-                    </div>
-                    <div className="card-back">
-                      <img
-                        src="nipfp2.jpg"
-                        alt="profile picture"
-                        className="pfp"
-                      ></img>
-                    </div>
-                  </div>
-                </div>
-                <div className="info">
-                  <p>Ni Tran</p>
-                  <ul className="info-details">
-                    <li>Frontend Developer</li>
-                    <li>Artist</li>
-                  </ul>
-                </div>
+        <div className="about-container">
+          <div className={`about-text1 box ${isVisible ? "visible" : ""}`}>
+            <p>
+              {" "}
+              <p>Hello, my name is Ni.</p>
+              I'm a frontend developer that loves to bring thoughtful designs to
+              life!
+              <br /> With a focus on building intuitive and engaging user
+              experiences for all, I'm always trying to take on challenges
+              without fear of failure. Anything is possible with the right blend
+              of creativity, technology, and passion.{" "}
+            </p>
+          </div>
+          <div className={`card-container box ${isVisible ? "visible" : ""}`}>
+            <div
+              className={`card ${isFlipped ? "isFlipped" : null}`}
+              onClick={handleClick}
+            >
+              <div className="card-front">
+                <img
+                  src="ni_pfp2.jpg"
+                  alt="profile picture"
+                  className="pfp"
+                ></img>
+              </div>
+              <div className="card-back">
+                <img
+                  src="ni_pfp.jpg"
+                  alt="profile picture"
+                  className="pfp"
+                ></img>
               </div>
             </div>
-            <div className={`item desc-2 ${isVisible ? "visible" : ""}`}>
-              <div className="desc-container">
-                <p>Hello!</p>
-                <p>I'm Ni and I love to bring thoughtful designs to life!</p>
-                <p>
-                  I'm always trying to learn more and to take on challenges
-                  without fear of failure.
-                </p>
-                <p>
-                  My focus is on building intuitive and engaging <br />
-                  user experiences for all.
-                </p>
-                <p>
-                  With the right blend of creativity and technology, <br />
-                  anything is possible.
-                </p>
-              </div>
-            </div>
-            <div className={`item music-3 ${isVisible ? "visible" : ""}`}>
-              <iframe
-                data-testid="embed-iframe"
-                src="https://open.spotify.com/embed/track/3VPBPBZKxQu3bqeuzz8gRm?utm_source=generator"
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              ></iframe>
-            </div>
-            <div className={`item skills-4 ${isVisible ? "visible" : ""}`}>
-              <ul className="skills">
-                <li>HTML/CSS</li>
-                <li>JavaScript</li>
-                <li>TypeScript</li>
-                <li>Python</li>
-                <li>C#</li>
-                <li>SQL</li>
-                <li>React</li>
-                <li>Next.js</li>
-              </ul>
-            </div>
+          </div>
+          <div className={`about-text2 box ${isVisible ? "visible" : ""}`}>
+            <ul className="skills">
+              <li>HTML/CSS</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>C#</li>
+              <li>Python</li>
+              <li>React</li>
+              <li>Next.js</li>
+            </ul>
           </div>
         </div>
       </div>

@@ -32,7 +32,7 @@ function App() {
             <div className="home-main-content">
               <h1>Ni Tran</h1>
               <div className="highlight-wrapper">
-                <p>Frontend Developer</p>
+                <p className="title">Frontend Developer</p>
                 <div
                   className={`highlight-bar ${isVisible ? "visible" : ""}`}
                 ></div>

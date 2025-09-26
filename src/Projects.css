@@ -1,14 +1,14 @@
 
 .projects-main {
     height: 100%;
-    width: 60%;
+    width: 70%;
 }
 
 .underline.projects {
     height: 6px;
-    width: 100px;
-    left: -1px;
+    width: 125px;
 }
+
 
 @media (max-width: 900px) {
     .projects-main {
