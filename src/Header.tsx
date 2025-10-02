@@ -17,7 +17,7 @@ export function Header({ isDark, setIsDark }: HeaderProps) {
     <div className="header">
       <nav className="navbar">
         <div className="nav-container">
-          <a href="" className="site-title">
+          <a href="#home" className="site-title">
             Ni Tran
           </a>
           <button
@@ -31,10 +31,10 @@ export function Header({ isDark, setIsDark }: HeaderProps) {
           </button>
         </div>
         <ul className={`navlinks ${isOpen ? "open" : ""}`}>
-          <a href="">Home</a>
-          <a href="">About</a>
-          <a href="">Projects</a>
-          <a href="">Contact</a>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
           <button className="color-mode" onClick={handleColorMode}>
             <img src={isDark ? "darkmodeicon.svg" : "lightmodeicon.svg"}></img>
           </button>

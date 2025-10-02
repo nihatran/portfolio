@@ -50,7 +50,7 @@ export function Projects() {
             title="Noted"
             desc="A browser-based notes app designed to quickly capture and organize simple thoughts before they’re forgotten."
             thumbnail=""
-            tech={["HTML/CSS"]}
+            tech={["HTML/CSS", "TypeScript", "React", "Next.js"]}
             link=""
           ></ProjectCard>
           <ProjectCard
