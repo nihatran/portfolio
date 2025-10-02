@@ -92,6 +92,8 @@ ul > a:hover:after {
 
   .navlinks.open {
     max-height: 300px; 
+    position: relative;
+    z-index: 2;
   }
 
   .toggle {

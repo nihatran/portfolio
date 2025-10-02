@@ -6,6 +6,7 @@ interface ProjectCardProps {
   desc: string;
   thumbnail: string;
   tech: Array<string>;
+  link: string;
 }
 
 export function ProjectCard({
@@ -13,6 +14,7 @@ export function ProjectCard({
   desc,
   thumbnail,
   tech,
+  link,
 }: ProjectCardProps) {
   const scrollAnimRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -47,7 +49,9 @@ export function ProjectCard({
         ref={scrollAnimRef}
         className={`project-card ${isVisible ? "visible" : ""}`}
       >
-        <img src={thumbnail} className="project-thumbnail"></img>
+        <a href={link} target="_blank">
+          <img src={thumbnail} className="project-thumbnail"></img>
+        </a>
         <div className="project-details">
           <h3>{title}</h3>
           <p>{desc}</p>

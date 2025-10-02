@@ -47,32 +47,65 @@ export function Projects() {
         </div>
         <div className="project-container">
           <ProjectCard
-            title="Chiikawa Pomodoro"
-            desc="A cute chiikawa-themed pomodoro I created to encourage good study habits. 
-            Allows the user to customize the times to best fit their work needs."
+            title="Noted"
+            desc="A browser-based notes app designed to quickly capture and organize simple thoughts before they’re forgotten."
             thumbnail=""
-            tech={["HTML/CSS", "TypeScript", "React"]}
+            tech={["HTML/CSS"]}
+            link=""
           ></ProjectCard>
           <ProjectCard
-            title="Habit Tracker"
+            title="Chiikawa Pomodoro"
+            desc="A cute chiikawa-themed pomodoro I made to encourage good study habits. 
+            Allows the user to customize the times to best fit their work needs."
+            thumbnail="chiikawapomodoro.PNG"
+            tech={["HTML/CSS", "TypeScript", "React"]}
+            link="https://chiikawa-pomodoro.vercel.app"
+          ></ProjectCard>
+          <ProjectCard
+            title="Project"
             desc="Lorem ipsum dolor sit amet consectetur adipiscing elit. 
             Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis."
             thumbnail=""
             tech={["HTML/CSS"]}
+            link=""
+          ></ProjectCard>
+          <ProjectCard
+            title="Project"
+            desc="Lorem ipsum dolor sit amet consectetur adipiscing elit. 
+            Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis."
+            thumbnail=""
+            tech={["HTML/CSS"]}
+            link=""
+          ></ProjectCard>
+          <ProjectCard
+            title="Project"
+            desc="Lorem ipsum dolor sit amet consectetur adipiscing elit. 
+            Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis."
+            thumbnail=""
+            tech={["HTML/CSS"]}
+            link=""
+          ></ProjectCard>
+          <ProjectCard
+            title="tripleS Profiles"
+            desc="A simple and responsive gallery of flippable cards I created to introduce people to the 24 members of tripleS, my favorite K-pop group."
+            thumbnail="triplesprofiles.PNG"
+            tech={["HTML/CSS", "JavaScript", "React"]}
+            link="https://triples-profiles.vercel.app/"
+          ></ProjectCard>
+          <ProjectCard
+            title="Pokédex"
+            desc="An encyclopedia of Pokémon that fetches information from PokéAPI."
+            thumbnail="pokedex.PNG"
+            tech={["HTML/CSS", "JavaScript"]}
+            link="https://nihatran.github.io/pokedex-v1/"
           ></ProjectCard>
           <ProjectCard
             title="Stock Analyzer"
-            desc="Lorem ipsum dolor sit amet consectetur adipiscing elit. 
-            Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis."
-            thumbnail=""
-            tech={["HTML/CSS"]}
-          ></ProjectCard>
-          <ProjectCard
-            title="Pokedex"
-            desc="Lorem ipsum dolor sit amet consectetur adipiscing elit. 
-            Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis."
-            thumbnail=""
-            tech={["HTML/CSS"]}
+            desc="A Windows Forms application that detects and displays
+            Japanese candlestick patterns from stock data files provided by the user."
+            thumbnail="stockanalyzer.png"
+            tech={["C#", "Windows Forms"]}
+            link="https://github.com/nihatran/Stock-Analyzer"
           ></ProjectCard>
         </div>
       </div>

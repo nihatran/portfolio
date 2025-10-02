@@ -71,6 +71,10 @@
     padding: 15px;
 }
 
+.highlight {
+    color: var(--titlecolor)
+}
+
 .box {
     opacity: 0;
     transition: opacity 1s ease-in;

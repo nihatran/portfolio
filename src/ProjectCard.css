@@ -16,7 +16,7 @@
 }
 
 .project-thumbnail {
-    height: 400px;
+    height: 390px;
     width: 400px;
     border: 2px solid var(--primarycolor);
     border-radius: 5px;
@@ -31,6 +31,7 @@
 h3 {
     font-size: 1.4em;
     font-weight: 600;
+    color: var(--titlecolor);
 }
 
 .project-details > p {
@@ -57,6 +58,15 @@ h3 {
   transition-delay: 400ms;
 }
 .project-card.visible:nth-child(4) {
+  transition-delay: 600ms;
+}
+.project-card.visible:nth-child(6) {
+  transition-delay: 200ms;
+}
+.project-card.visible:nth-child(7) {
+  transition-delay: 400ms;
+}
+.project-card.visible:nth-child(8) {
   transition-delay: 600ms;
 }
 
