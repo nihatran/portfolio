@@ -57,7 +57,7 @@ export function About() {
             >
               <div className="card-front">
                 <img
-                  src="nipfp.png"
+                  src="nipfp0.png"
                   alt="profile picture"
                   className="pfp"
                 ></img>
@@ -74,7 +74,7 @@ export function About() {
           <div className={`about-text box ${isVisible ? "visible" : ""}`}>
             <p>
               {" "}
-              <p>Hello, my name is Ni.</p>
+              <p>Hello, my name is Ni!</p>
               I'm a frontend developer that loves to bring thoughtful designs to
               life!
               <br /> With a focus on building intuitive and engaging user

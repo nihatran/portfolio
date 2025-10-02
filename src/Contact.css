@@ -1,0 +1,63 @@
+
+.contact-main {
+    width: 70%;
+}
+
+.underline.contact {
+    height: 6px;
+    width: 120px;
+}
+
+.contact-container {
+    opacity: 0;
+    transition: opacity 1.2s ease-in;
+    width: 100%;
+    margin: 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 150px 50px;
+
+    border: 2px solid var(--primarycolor);
+    border-radius: 5px;
+}
+
+.contact-container.visible {
+    opacity: 1;
+}
+
+.contact-heading {
+    font-size: 1.8em;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.contact-text {
+    font-size: 1.2em;
+    margin: 10px 0px;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.email {
+    font-size: 1.2em;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.contact-links-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.contact-links img {
+    width: 50px;
+}
