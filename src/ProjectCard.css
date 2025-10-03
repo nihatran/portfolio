@@ -4,7 +4,7 @@
     align-items: center;
     max-width: 400px;
     gap: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 70px;
     opacity: 0;
     transition: all 0.8s ease;
     transform: translateX(-30%);
@@ -35,6 +35,7 @@ h3 {
 
 .project-details > p {
     font-size: 1.2em;
+    height: 100px;
 }
 
 .tech-stack {
@@ -72,8 +73,7 @@ h3 {
 
 @media (max-width: 900px) {
   .project-container {
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin: 50px 0px;
   }
 
   .project-card {
