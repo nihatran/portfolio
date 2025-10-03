@@ -51,6 +51,7 @@ function App() {
         <section id="contact">
           <Contact isDark={isDark}></Contact>
         </section>
+        <div className="footer">© 2025 Ni Tran</div>
       </div>
     </>
   );

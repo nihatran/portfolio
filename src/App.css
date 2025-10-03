@@ -154,6 +154,13 @@ h2 {
     transform: scaleX(1);
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
 @media(prefers-reduced-motion) {
     .visible {
         transition: none;
