@@ -89,9 +89,13 @@
     }
 
     .box {
-        height: 330px;
-        width: 380px;
+        height: 300px;
+        width: 300px;
         font-size: 1.4em;
+    }
+
+    .about-container {
+        gap: 50px;
     }
 
 }

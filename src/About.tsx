@@ -73,16 +73,13 @@ export function About() {
           </div>
           <div className={`about-text box ${isVisible ? "visible" : ""}`}>
             <p>
-              {" "}
-              <p>
-                Hello, my name is <span className="highlight">Ni</span>!
-              </p>
+              Hello, my name is <span className="highlight">Ni</span>! <br />
               I'm a frontend developer that loves to bring thoughtful designs to
               life!
               <br /> With a focus on building intuitive and engaging user
               experiences for all, I'm always trying to take on challenges
               without fear of failure. Anything is possible with the right blend
-              of creativity, technology, and passion.{" "}
+              of creativity, technology, and passion.
             </p>
           </div>
         </div>
