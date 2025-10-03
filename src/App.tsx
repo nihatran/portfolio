@@ -29,17 +29,14 @@ function App() {
       <div className="app" data-theme={isDark ? "dark" : "light"}>
         <section id="home" className={isVisible ? "visible" : ""}>
           <Header isDark={isDark} setIsDark={setIsDark}></Header>
-          <div className="home-border-wrapper">
-            <div className="home-border"></div>
-            <div className="home-main">
-              <div className="home-main-content">
-                <h1>Ni Tran</h1>
-                <div className="highlight-wrapper">
-                  <p className="title">Frontend Developer</p>
-                  <div
-                    className={`highlight-bar ${isVisible ? "visible" : ""}`}
-                  ></div>
-                </div>
+          <div className="home-main">
+            <div className="home-main-content">
+              <h1>Ni Tran</h1>
+              <div className="highlight-wrapper">
+                <p className="title">Frontend Developer</p>
+                <div
+                  className={`highlight-bar ${isVisible ? "visible" : ""}`}
+                ></div>
               </div>
             </div>
           </div>

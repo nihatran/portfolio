@@ -10,7 +10,7 @@
 
 .contact-container {
     opacity: 0;
-    transition: opacity 1.2s ease-in;
+    transition: opacity 1s ease-in;
     width: 100%;
     margin: 100px 0px;
     display: flex;
@@ -64,6 +64,10 @@
 @media (max-width: 900px) {
     .contact-main {
         width: 90%;
+    }
+
+    .contact-container {
+        margin-top: 50px;
     }
 
 }

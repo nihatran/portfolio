@@ -16,7 +16,6 @@
     flex-wrap: wrap;
     gap: 30px;
     margin: 100px 0px;
-    border-radius: 5px;
 }
 
 .pfp {
@@ -95,6 +94,8 @@
     }
 
     .about-container {
+        margin-top: 50px;
+        margin-bottom: 100px;
         gap: 50px;
     }
 

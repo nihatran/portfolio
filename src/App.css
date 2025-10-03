@@ -57,10 +57,8 @@ body {
 }
 
 .home-border {  
-    /*border: 2px solid var(--primarycolor);*/
     width: 70%;
     height: 70vh;
-    border-radius: 5px;
 }
 
 .home-main {
