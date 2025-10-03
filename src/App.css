@@ -23,9 +23,9 @@ body {
 [data-theme="dark"] {
     --bgcolor: rgb(37, 37, 37);
     --textcolor: white;
-    --primarycolor: #4e6da7;
-    --secondarycolor: #60738d;
-    --titlecolor: #3e92ca;
+    --primarycolor: #295ec2;
+    --secondarycolor: #576983;
+    --titlecolor: #3c9fe0;
 }
 
 [data-theme="light"] {
@@ -57,7 +57,7 @@ body {
 }
 
 .home-border {  
-    border: 2px solid var(--primarycolor);
+    /*border: 2px solid var(--primarycolor);*/
     width: 70%;
     height: 70vh;
     border-radius: 5px;

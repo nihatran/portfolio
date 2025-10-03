@@ -18,8 +18,7 @@
 .project-thumbnail {
     height: 390px;
     width: 400px;
-    border: 2px solid var(--primarycolor);
-    border-radius: 5px;
+    border: 1px solid var(--primarycolor);
 }
 
 .project-details {
@@ -68,5 +67,17 @@ h3 {
 }
 .project-card.visible:nth-child(8) {
   transition-delay: 600ms;
+}
+
+
+@media (max-width: 900px) {
+  .project-card {
+    font-size: 0.8em;
+  }
+
+  .project-thumbnail {
+    width: 310px;
+    height: 300px;
+  }
 }
 

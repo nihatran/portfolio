@@ -16,7 +16,6 @@
     flex-wrap: wrap;
     gap: 30px;
     margin: 100px 0px;
-    border: 2px solid var(--primarycolor);
     border-radius: 5px;
 }
 
@@ -90,7 +89,7 @@
     }
 
     .box {
-        height: 380px;
+        height: 330px;
         width: 380px;
         font-size: 1.4em;
     }
