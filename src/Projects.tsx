@@ -51,7 +51,7 @@ export function Projects() {
             desc="A browser-based notes app designed to quickly capture and organize simple thoughts before they’re forgotten."
             thumbnail="noted.PNG"
             tech={["HTML/CSS", "TypeScript", "React", "Next.js"]}
-            link=""
+            link="http://noted-thoughts.vercel.app/"
           ></ProjectCard>
           <ProjectCard
             title="Chiikawa Pomodoro"
