@@ -49,7 +49,7 @@ export function Projects() {
           <ProjectCard
             title="Noted"
             desc="A browser-based notes app designed to quickly capture and organize simple thoughts before they’re forgotten."
-            thumbnail=""
+            thumbnail="noted.PNG"
             tech={["HTML/CSS", "TypeScript", "React", "Next.js"]}
             link=""
           ></ProjectCard>
@@ -60,30 +60,6 @@ export function Projects() {
             thumbnail="chiikawapomodoro.PNG"
             tech={["HTML/CSS", "TypeScript", "React"]}
             link="https://chiikawa-pomodoro.vercel.app"
-          ></ProjectCard>
-          <ProjectCard
-            title="Project"
-            desc="Lorem ipsum dolor sit amet consectetur adipiscing elit. 
-            Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis."
-            thumbnail=""
-            tech={["HTML/CSS"]}
-            link=""
-          ></ProjectCard>
-          <ProjectCard
-            title="Project"
-            desc="Lorem ipsum dolor sit amet consectetur adipiscing elit. 
-            Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis."
-            thumbnail=""
-            tech={["HTML/CSS"]}
-            link=""
-          ></ProjectCard>
-          <ProjectCard
-            title="Project"
-            desc="Lorem ipsum dolor sit amet consectetur adipiscing elit. 
-            Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis."
-            thumbnail=""
-            tech={["HTML/CSS"]}
-            link=""
           ></ProjectCard>
           <ProjectCard
             title="tripleS Profiles"
